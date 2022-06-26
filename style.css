@@ -2,6 +2,7 @@ html, body{
     font-family: Poppins, Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100%;
+    /* overflow-x: hidden; */
 }
 
 /*Container responsivo*/
@@ -44,7 +45,7 @@ html, body{
 }
 
 .hero{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background: linear-gradient(107.56deg, #363636 0%, #000000 100%);
@@ -61,6 +62,7 @@ html, body{
     height: 668px;
     opacity: 0.05;
     transform: rotate(-45deg) scale(1.5);
+    overflow: hidden;
 }
 
 .container-hero{
@@ -75,6 +77,7 @@ html, body{
 
 .hero-text{
     color: #F1F1F1;
+    margin-left: 15px;
 }
 
 .hero-text h1{
@@ -93,6 +96,75 @@ html, body{
 }
 
 .quienes-somos{
-    height: 1080px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     background-color: #F1F1F1;
+    height: 100%;
+}
+
+.quienes-somos-content{
+    margin: 0 auto;
+    /* padding: 150px 0; */
+    width: 970px;
+}
+
+.who-text {
+    text-align: center;
+}
+
+.who-text h2{
+    margin: 0 0 18px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.who-text p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-thumb{
+    width: 150px;
+    height: 150px;
+    background-color: #A7A6A6;
+    border-radius: 50%;
+}
+
+.card h3{
+    margin: 20px 0 0 0;
+    font-size: 22px;
+}
+
+.card p{
+    margin: 0;
+    color: #827E7E;
+}
+
+.card .fede{
+    background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/fede%20thumb.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .fran{
+    background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/fran-thumb.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
