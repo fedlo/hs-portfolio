@@ -55,7 +55,7 @@ html, body{
     position: absolute;
     right: -100px;
     top: 250px;
-    background-image: url('hero-back.png');
+    background-image: url('https://raw.githubusercontent.com/fedlo/hs-portfolio/main/hero-back.png');
     background-repeat: no-repeat;
     width: 668px;
     height: 668px;
