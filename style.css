@@ -106,7 +106,7 @@ html, body{
 .quienes-somos-content{
     margin: 0 auto;
     /* padding: 150px 0; */
-    width: 970px;
+    max-width: 970px;
 }
 
 .who-text {
@@ -129,7 +129,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 360px;
+    flex-wrap: wrap;
+    max-width: 360px;
     margin: 0 auto;
     margin-top: 70px;
 }
@@ -168,3 +169,79 @@ html, body{
     background-position: center;
     background-size: cover;
 }
+
+.que-hacemos{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(252.44deg, #1F1F1F 49.52%, #000000 100%);
+}
+
+.qh-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.qh-content{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.qh-content > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 70px 0;
+    color: #F1F1F1;
+}
+
+.qh-cards{
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.qh-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 480px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 1000px 4px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.qh-card:hover{
+    box-shadow: inset 1000px 4px 4px rgba(0, 0, 0, 0.95);
+}
+
+.qh-card > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #F1F1F1;
+    user-select: none;
+}
+
+/*Fondos cartas*/
+.qh-card.foto{
+    background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/foto.jpg?raw=true');
+}
+
+.qh-card.video{
+    background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/video.jpg?raw=true');
+}
+
+.qh-card.digraph{
+    background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/digraph.jpg?raw=true');
+}
+/* FIN Fondos cartas*/
