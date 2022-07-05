@@ -14,7 +14,9 @@ html, body{
 .header{
     position: absolute;
     width: 100%;
-    height: 182px;
+    box-sizing: border-box;
+    padding: 40px;
+    /* height: 182px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +25,8 @@ html, body{
 }
 
 .header h2{
-    margin-left: 63px;
+    /* margin-left: 63px; */
+    margin: 0;
     font-size: 28px;
     font-weight: 600;
     color: #F1F1F1;
@@ -33,7 +36,8 @@ html, body{
 .contact-btn{
     background-color: #F1F1F1;
     padding: 18px 23px;
-    margin-right: 92px;
+    margin: 0;
+    /* margin-right: 92px; */
     border-radius: 12px;
 }
 
@@ -176,10 +180,26 @@ html, body{
     background: linear-gradient(252.44deg, #1F1F1F 49.52%, #000000 100%);
 }
 
+.video-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: opacity(0.15);
+}
+
+.video-background video{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+
 .qh-container{
+    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
+    z-index: 1;
 }
 
 .qh-content{
@@ -216,7 +236,7 @@ html, body{
     background-position: center;
     background-size: cover;
     box-shadow: inset 1000px 4px 4px rgba(0, 0, 0, 0.6);
-    transition: 0.3s;
+    transition: 0.35s;
 }
 
 .qh-card:hover{
@@ -245,3 +265,124 @@ html, body{
     background-image: url('https://github.com/fedlo/hs-portfolio/blob/main/digraph.jpg?raw=true');
 }
 /* FIN Fondos cartas*/
+
+.contacto{
+    background-color: #F1F1F1;
+    /* position: absolute; */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+/* .contacto a{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+} */
+
+.contacto h2{
+    margin: 0 0 60px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.contacto h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.contacto-content{
+    text-align: center;
+    width: 100%;
+}
+
+.action-call{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*estilos formulario*/
+.input{
+    width: 430px;
+    height: 43px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    max-width: 430px;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.form textarea{
+    background-color: #D9D9D9;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    resize: none;
+    border: none;
+    width: 430px;
+    height: 130px;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.submit{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1F1F1F;
+    padding: 12px 35px;
+    border: 1px solid #1F1F1F;
+    border-radius: 5px;
+    background-color: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #1F1F1F;
+    color: #F1F1F1;
+}
+
+.social-btn{
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-btn img{
+    width: 100px;
+    transition: 0.3s;
+}
+
+.social-btn img:hover{
+    filter: invert(35%);
+}
+
+.footer{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 50px 0;
+    margin: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    text-align: center;
+    color: #555;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+    margin: 5px 0 0 0;
+}
+
+.footer p{
+    margin: 0 0 0px 0;
+}
